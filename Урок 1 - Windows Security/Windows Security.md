@@ -119,9 +119,12 @@ VALUE: Menu
 
 ### Викнайте завдання:
 Дізнайтесь, як налаштувати максимальний вік життя паролю різними інструментами. Підказки:
-1. Прогляньте реєстр `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SeCEdit\Reg Values\MACHINE/System/CurrentControlSet/Services/Netlogon/Parameters/`
-2. Powershell net accounts
-3. Групова політика
+1. Прогляньте реєстр 
+```
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SeCEdit\Reg Values\MACHINE/System/CurrentControlSet/Services/Netlogon/Parameters/
+```
+3. Powershell net accounts
+4. Групова політика
 
 ## 10. Логування та Журнал Подій
 Найважливішими подіями є дані види: Security, System, Application. У кожної події є свій ID. Можете переглянути їх детальніше за [посиланням](https://www.ultimatewindowssecurity.com/securitylog/encyclopedia/default.aspx?i=j)
