@@ -132,7 +132,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SeCEdit\Reg Valu
 Проте варто зазначити, що більшість логів є не дуже інформативними, і саме через їх велику кількість їх фільтрування здійснюється автоматизованими системами.
 
 ### Виконайте завдання:
-1. Перегляньте PowerShell логи з ID 4103 та 4104, які могли створитись з попереднього запуску PowerShell після включення sript block logging.
+1. Перегляньте PowerShell логи з ID 4103 та 4104, які могли створитись з попереднього запуску PowerShell після включення script block logging.
 2. Логи, які можуть бути потенційно цікавими для Threat Hunting можна переглянути за [посиланням](https://www.activecountermeasures.com/hunting-windows-event-logs/)
 
 ## 11. Порти та Фаєрволи
@@ -145,7 +145,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SeCEdit\Reg Valu
 4. Забороніть ICMP та повторіть `ping`
 
 ## 12. Task Scheduler
-Аналогією крон задач для Windows є shceduled tasks, або заплановані задачі. Шкідливі програми можуть додавати запуск свого шкідливого коду як задачу, таким чином продовжуючи працювати навіть після перезапуску ОС.
+Аналогією крон задач для Windows є scheduled tasks, або заплановані задачі. Шкідливі програми можуть додавати запуск свого шкідливого коду як задачу, таким чином продовжуючи працювати навіть після перезапуску ОС.
 
 ## 13. Домашнє завдання
 1. https://tryhackme.com/room/introtoendpointsecurity
