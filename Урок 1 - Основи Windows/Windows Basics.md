@@ -119,7 +119,7 @@ VALUE: Menu
 11. Натисніть **Apply** та **OK**
 
 ### Виконайте завдання:
-Дізнайтесь, як налаштувати максимальний вік життя паролю різними інструментами. Підказки:
+Дізнайтесь, як налаштувати максимальний вік життя пароля різними інструментами. Підказки:
 1. Прогляньте реєстр 
 ```
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SeCEdit\Reg Values\MACHINE/System/CurrentControlSet/Services/Netlogon/Parameters/
