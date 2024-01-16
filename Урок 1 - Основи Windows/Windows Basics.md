@@ -108,7 +108,6 @@ VALUE: Menu
 ### Виконайте завдання:
 1. Включити логування команд, що виконуються у PowerShell (script block logging):
 2. Відкрити редактор групових політик -> Computer configuration -> Administrative Templates: Policy Definitions -> Windows Components -> Windows PowerShell
-
 3. ПКМ по _Turn on Module Logging_, обрати **Edit**, поставити галку біля **Enabled**
 4. Після галки біля enabled, з'явиться кнопка **Show** біля **Modules Names**.
 5. Натисніть на **Show**
@@ -121,7 +120,6 @@ VALUE: Menu
 
 ### Виконайте завдання:
 Дізнайтесь, як налаштувати максимальний вік життя паролю різними інструментами. Підказки:
-
 1. Прогляньте реєстр 
 ```
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SeCEdit\Reg Values\MACHINE/System/CurrentControlSet/Services/Netlogon/Parameters/
