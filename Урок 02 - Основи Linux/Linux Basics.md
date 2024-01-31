@@ -156,3 +156,4 @@ Ubuntu має свій власний фаєрвол, відомий як ufw (u
 2. https://tryhackme.com/room/ninjaskills
 3. https://tryhackme.com/room/bashscripting
 4. https://tryhackme.com/room/linuxstrengthtraining
+5. https://cmdchallenge.com
