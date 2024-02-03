@@ -63,9 +63,8 @@ FTPS - це ще одна покращена версія FTP, тільки на
 ![telnet2](https://github.com/sarin00/Course1-Intro-to-Cybersecruity/blob/main/%D1%8F%D0%94%D0%BE%D0%B4%D0%B0%D1%82%D0%BA%D0%BE%D0%B2%D1%96%20%D0%BC%D0%B0%D1%82%D0%B5%D1%80%D1%96%D0%B0%D0%BB%D0%B8/Telnet2.png)
 
 ## Домашнє завдання:
-1. Пройти https://tryhackme.com/room/dnsindetail
-2. https://tryhackme.com/room/dnsindetail
-3. https://tryhackme.com/room/dnsmanipulation
+1. https://tryhackme.com/room/dnsindetail
+2. https://tryhackme.com/room/dnsmanipulation
 
 Налаштувати SSH сервер
 1. Створити віртуалку з Linux (або арендувати сервер)
