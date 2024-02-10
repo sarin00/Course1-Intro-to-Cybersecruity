@@ -45,9 +45,9 @@ Wireshark дозволяє захоплювати та аналізувати т
 6. Проаналізуйте мережеві зʼєднання, що були перехоплені. Чи це зʼєднання було ДО чи ВІД вашого компʼютеру? Який протокол використовувався? Які дані на різних рівнях моделі TCP/IP ви бачите? 
 
 ## 5. Домашнє завдання
-1. Закінчить проходження кімнати в (tryhackme)[https://tryhackme.com/room/introtonetworking];
+1. Закінчить проходження кімнати в [tryhackme](https://tryhackme.com/room/introtonetworking);
 2. Пограйтесь з Wireshark, спробуйте використати фільтри для пошуку необхідних комунікацій;
-3. Пройдіть кімнату з основ wireshark на (tryhackme)[https://tryhackme.com/room/wiresharkthebasics];
-4. Ще одна кімната (tryhackme)[https://tryhackme.com/room/bugged];
-5. І ще одна кімната (tryhackme)[https://tryhackme.com/room/layer2];
+3. Пройдіть кімнату з основ wireshark на [tryhackme](https://tryhackme.com/room/wiresharkthebasics);
+4. Ще одна кімната [tryhackme](https://tryhackme.com/room/bugged);
+5. І ще одна кімната [tryhackme](https://tryhackme.com/room/layer2);
 6. Прочитайте другу главу (CHAPTER 2 TCP/IP Review) книги Hacker Techniques Tools and Incident Handling 3rd Edition (книга є у каналі в телеграмі, в самому початку повідомлень);
