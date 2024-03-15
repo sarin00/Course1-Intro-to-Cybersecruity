@@ -75,7 +75,7 @@ server_name yourdomain.com www.yourdomain.com;
 `service nginx restart`
 14. Перевірити доступ до сайту на порті 80
 15. Купити доменне ім’я для сервера, додати записи типу domain.com та www.domain.com у вашому провайдері домену і переводити запити цих доменів на ваш сервер.
-16. Змінити nginx конфіг щоб там були новокуплені доменні імена.
+16. Змінити nginx конфіг щоб там були новокуплене доменне імʼя.
 `nano /etc/nginx/sites-available/default`  
 Має бути так:  
 `server_name yourdomain.com www.yourdomain.com;`  
