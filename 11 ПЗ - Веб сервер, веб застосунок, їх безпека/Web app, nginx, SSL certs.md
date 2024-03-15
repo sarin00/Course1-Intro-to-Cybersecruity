@@ -44,11 +44,11 @@
 `pm2 start index.js`
 7. Запустити фаєрвол, відкрити порти для ssh(22), http(80), https(443), та наш веб застосунок(6000)
 ```
-ufw enable
 ufw allow ssh
 ufw allow http
 ufw allow https
 ufw allow 6000
+ufw enable
 ```
 8. Перевірити що наш node.js web-застосунок працює
 Зробити у Postman запит на `http://<ip вашого сервера>:6000`
