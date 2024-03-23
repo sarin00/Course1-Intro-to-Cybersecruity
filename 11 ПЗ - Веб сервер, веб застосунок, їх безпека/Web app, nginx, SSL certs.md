@@ -47,11 +47,11 @@
 ufw allow ssh
 ufw allow http
 ufw allow https
-ufw allow 6000
+ufw allow 5000
 ufw enable
 ```
 8. Перевірити що наш node.js web-застосунок працює
-Зробити у Postman запит на `http://<ip вашого сервера>:6000`
+Зробити у Postman запит на `http://<ip вашого сервера>:5000`
 9. Встановити nginx (веб сервер)
 `apt install nginx -y`
 10. Редагувати конфіг nginx
@@ -61,7 +61,7 @@ ufw enable
 server_name yourdomain.com www.yourdomain.com;
 
  location / {
-        proxy_pass http://localhost:6000; #whatever port your app runs on
+        proxy_pass http://localhost:5000; #whatever port your app runs on
         proxy_http_version 1.1;
         proxy_set_header Upgrade $http_upgrade;
         proxy_set_header Connection 'upgrade';
