@@ -91,3 +91,4 @@ certbot --nginx (будуть додаткові опції та вибір)
 ## 7. Додаткові матеріали та завдання
 [Більше про TLS та сертифікати](https://habr.com/ru/companies/plesk/articles/502604/)  
 [Tryhackme HTTP](https://tryhackme.com/room/httpindetail)
+[Крутий креш-курс по node.js](https://www.youtube.com/watch?v=fBNz5xF-Kx4&list=WL&index=16)
