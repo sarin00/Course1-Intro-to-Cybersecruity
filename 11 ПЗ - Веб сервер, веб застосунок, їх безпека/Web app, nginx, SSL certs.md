@@ -31,20 +31,20 @@
 ## 6. Практичне завдання
 Спочатку ми встановимо і запустимо web application на node.js, після чого ми встановимо і запустимо веб сервер nginx. Ми сконфігуруємо NGINX на перенаправлення HTTP запитів на node.js застосунок. Потім ми встановимо SSL сертифікат на nginx. Майже всі команди треба запускати з SUDO.
 
-1. Встановити nodejs та npm
-`apt install nodejs npm -y`
-2. Перевірити встановлення nodejs
-`node --version`
+1. Встановити nodejs та npm  
+`apt install nodejs npm -y`  
+2. Перевірити встановлення nodejs  
+`node --version`  
 3. Завантажити код node.js застосунку  
 `git pull https://github.com/sarin00/nodehttps.git`  
-4. Перейти у новостворену папку з кодом веб застосунку
-5. Встановити залежності
-`npm install`
-6. Встановити pm2 (програма що запускатиме наш js application в окремому процесі)
-`npm i pm2 -g`
-7. Запустити node.js застосунок
-`pm2 start index.js`
-8. Запустити фаєрвол, відкрити порти для ssh(22), http(80), https(443), та наш веб застосунок(6000)
+4. Перейти у новостворену папку з кодом веб застосунку  
+5. Встановити залежності  
+`npm install`  
+6. Встановити pm2 (програма що запускатиме наш js application в окремому процесі)  
+`npm i pm2 -g`  
+7. Запустити node.js застосунок  
+`pm2 start index.js`  
+8. Запустити фаєрвол, відкрити порти для ssh(22), http(80), https(443), та наш веб застосунок(5000)  
 ```
 ufw allow ssh
 ufw allow http
@@ -52,13 +52,13 @@ ufw allow https
 ufw allow 5000
 ufw enable
 ```
-8. Перевірити що наш node.js web-застосунок працює
-Зробити у Postman запит на `http://<ip вашого сервера>:5000`
-9. Встановити nginx (веб сервер)
-`apt install nginx -y`
-10. Редагувати конфіг nginx
-`nano /etc/nginx/sites-available/default`
-11. Додати в конфіг такі дані:
+8. Перевірити що наш node.js web-застосунок працює  
+Зробити у Postman запит на `http://<ip вашого сервера>:5000`  
+9. Встановити nginx (веб сервер)  
+`apt install nginx -y`  
+10. Редагувати конфіг nginx  
+`nano /etc/nginx/sites-available/default`  
+11. Додати в конфіг такі дані:  
 ```
 server_name yourdomain.com www.yourdomain.com;
 
@@ -71,13 +71,13 @@ server_name yourdomain.com www.yourdomain.com;
         proxy_cache_bypass $http_upgrade;
     }
 ```
-12. Перевірити конфігураційний файл nginx на помилки
-`sudo nginx -t`
-13. Перезапустити nginx
-`service nginx restart`
-14. Перевірити доступ до сайту на порті 80
-15. Купити доменне ім’я для сервера, додати записи типу domain.com та www.domain.com у вашому провайдері домену і переводити запити цих доменів на ваш сервер.
-16. Змінити nginx конфіг щоб там були новокуплене доменне імʼя.
+12. Перевірити конфігураційний файл nginx на помилки  
+`sudo nginx -t`  
+13. Перезапустити nginx  
+`service nginx restart`  
+14. Перевірити доступ до сайту на порті 80  
+15. Купити доменне ім’я для сервера, додати записи типу domain.com та www.domain.com у вашому провайдері домену і переводити запити цих доменів на ваш сервер.  
+16. Змінити nginx конфіг щоб там були новокуплене доменне імʼя.  
 `nano /etc/nginx/sites-available/default`  
 Має бути так:  
 `server_name yourdomain.com www.yourdomain.com;`  
