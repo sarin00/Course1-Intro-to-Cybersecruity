@@ -36,7 +36,7 @@
 2. Перевірити встановлення nodejs  
 `node --version`  
 3. Завантажити код node.js застосунку  
-`git pull https://github.com/sarin00/nodehttps.git`  
+`git clone https://github.com/sarin00/nodehttps.git`  
 4. Перейти у новостворену папку з кодом веб застосунку  
 5. Встановити залежності  
 `npm install`  
