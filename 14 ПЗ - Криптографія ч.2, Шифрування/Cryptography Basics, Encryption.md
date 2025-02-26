@@ -44,3 +44,7 @@
 
 ## 5. Висновки
 Все просто - в будь якій ситуації де потрібна асиметрична криптографія (не тільки шифрування) використовуйте алгоритми з Еліптичними Кривими. 
+
+## 6. Додаткові матеріали
+1. [Asymmetric encryption](https://www.practicalnetworking.net/series/cryptography/asymmetric-encryption/)
+2. [Symmetric encryption](https://www.practicalnetworking.net/series/cryptography/symmetric-encryption/)
