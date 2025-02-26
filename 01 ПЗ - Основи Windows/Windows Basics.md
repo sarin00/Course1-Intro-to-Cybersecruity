@@ -158,4 +158,3 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SeCEdit\Reg Valu
 2. [Більше інформації про шкідливе використання Powershell](https://book.hacktricks.xyz/windows-hardening/basic-powershell-for-pentesters)
 3. [Енциклопедія журналу подій](https://www.ultimatewindowssecurity.com/securitylog/encyclopedia/default.aspx?i=j)  
 4. [Логи, цікаві для Threat Hunting](https://www.activecountermeasures.com/hunting-windows-event-logs/)  
-5. 
