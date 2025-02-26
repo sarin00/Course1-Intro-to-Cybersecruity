@@ -1,5 +1,5 @@
 ## 1. Основи Windows OS
-Операційна система (ОС) - це комплекс різних програм та їх компонентів, який управляє апаратними та програмними ресурсами комп'ютера, а також надає можливість іншим програмам взаємодіяти з “залізом” компʼютера.
+Операційна система (ОС) - це комплекс різних програм та їх компонентів, який керує апаратними та програмними ресурсами комп'ютера, а також надає можливість іншим програмам взаємодіяти з “залізом” компʼютера.
 
 ## 2. Налаштування
 Налаштування - це графічна програма для базових налаштувань ОС, які даються звичайним користувачам. Всі просунуті налаштування робляться через термінал, powershell, або інші програми. 
@@ -152,3 +152,10 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SeCEdit\Reg Valu
 2. https://tryhackme.com/room/windowsapi
 3. Прочитайте про програми Sysinternals від Майкрософт
 4. Прочитайте про Sysmon та його можливості
+
+## 14. Додаткові матеріали
+1. [Команди Powershell](https://learn.microsoft.com/en-us/powershell/scripting/powershell-commands?view=powershell-7.3)
+2. [Більше інформації про шкідливе використання Powershell](https://book.hacktricks.xyz/windows-hardening/basic-powershell-for-pentesters)
+3. [Енциклопедія журналу подій](https://www.ultimatewindowssecurity.com/securitylog/encyclopedia/default.aspx?i=j)  
+4. [Логи, цікаві для Threat Hunting](https://www.activecountermeasures.com/hunting-windows-event-logs/)  
+5. 
