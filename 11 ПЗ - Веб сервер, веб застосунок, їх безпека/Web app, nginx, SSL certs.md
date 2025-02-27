@@ -20,10 +20,10 @@
 
 ![webappserver](https://github.com/sarin00/Course1-Intro-to-Cybersecruity/blob/main/%D1%8F%D0%94%D0%BE%D0%B4%D0%B0%D1%82%D0%BA%D0%BE%D0%B2%D1%96%20%D0%BC%D0%B0%D1%82%D0%B5%D1%80%D1%96%D0%B0%D0%BB%D0%B8/web-app-server.png)
 
-## 5. Навіщо потрібні web servers (веб севрери)?
+## 5. Навіщо потрібні web servers (веб сервери)?
 1. SSL/TLS. Веб сервери беруть на себе задачу шифрування даних між собою та клієнтом.
 2. Load balancing. Веб сервери типу nginx можуть виступати в ролі load balancer, або балансувальника навантаження. Якщо у вас не один сервер з веб-застосунком, а кілька (багато клієнтів, можливо боїтесь що один з серверів вийде з ладу, тощо) - то всі запити від клієнта треба балансувати між вашими web applications, що і робить веб сервер.
-3. API gateway. Може вистувпати як API gateway для вашого web app.
+3. API gateway. Може виступати як API gateway для вашого web app.
 4. Firewall. Веб сервери, часто у взаємодії з іншими програмами, можуть виступати в ролі web application firewall, або WAF. WAF фільтруватиме всі запити що приходять від клієнта, перевірятиме і блокуватиме IP адреси поганих клієнтів, тощо
 5. Proxy. Веб сервери можуть виступати в ролі різних proxy, при необхідності.
 6. Багато інших пунктів, які нам зараз не критичні.
@@ -91,6 +91,7 @@ certbot --nginx (будуть додаткові опції та вибір)
 [Інструкції по Let'sEncrypt боту](https://certbot.eff.org/instructions?ws=nginx&os=ubuntufocal)
 
 ## 7. Додаткові матеріали та завдання
+[Круте відео пояснення TLS](https://www.youtube.com/watch?v=86cQJ0MMses)  
 [Більше про TLS та сертифікати](https://habr.com/ru/companies/plesk/articles/502604/)  
 [Tryhackme HTTP](https://tryhackme.com/room/httpindetail)  
-[Крутий креш-курс по node.js](https://www.youtube.com/watch?v=fBNz5xF-Kx4&list=WL&index=16)
+[Крутий креш-курс по node.js](https://www.youtube.com/watch?v=fBNz5xF-Kx4&list=WL&index=16)  
